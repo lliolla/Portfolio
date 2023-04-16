@@ -3,12 +3,11 @@ import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import '../src/style/index.scss'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
-import Project1 from './pages/Project1'
-import Project2 from './pages/Project2'
-import Project3 from './pages/Project3'
-import Project4 from './pages/Project4'
+import Projects from './pages/Projects'
+
 import NotFound from './pages/NotFound'
 import {AnimatePresence} from "framer-motion"
+import Apropos from './pages/Apropos'
 
 function App() {
 
@@ -18,10 +17,9 @@ function App() {
 <AnimatePresence> 
     <Routes>    
        <Route path="/" element={ <Home/> } />
-       <Route path="/projet-1" element={ <Project1/> } />
-       <Route path="/projet-2" element={ <Project2/> } />
-       <Route path="/projet-3" element={ <Project3/> } />
-       <Route path="/projet-4" element={ <Project4/> } />
+       <Route path="/a-propos" element={ <Apropos/> } />
+        <Route path="/projects" element={ <Projects/>} />
+        <Route/>
        <Route path="/contact" element={ <Contact/> } />
        <Route path="*" element={ <NotFound /> } />
     </Routes>  

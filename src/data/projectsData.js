@@ -8,6 +8,7 @@ export const projectsData = [
        [ "Définir la structure d'une page web à partir d'une maquette","Intégrer du contenu conformément à une maquette","Assurer la conformité d'une page web aux standards HTML et CSS","Implémenter une interface responsive"],
       img: "./assets/img/cv-web.jpg",
       link: "https://lliolla.github.io/P2-cv-web/",
+    
     },
     {
       id: 2,

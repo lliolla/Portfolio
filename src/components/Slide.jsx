@@ -3,18 +3,22 @@ import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
 
 const Projects = (props) => {
-  const [currentProject] = useState(projectsData[props.idProject]);
+const [currentProject, setCurrentProject] = useState(null); // Update to null initially
   const [left, setLeft] = useState();
   const [top, setTop] = useState();
   const [size, setSize] = useState();
   const [plusMinus, setPlusMinus] = useState();
   console.log(left, top, size);
   useEffect(() => {
+    console.log("idProject",props.idProject);
+    const project = projectsData.find(project => project.id === props.idProject);
+    setCurrentProject(project); // Update currentProject state with the found project data
     setLeft(Math.floor(Math.random() * 200 + 600) + "px");
     setTop(Math.floor(Math.random() * 200 + 150) + "px");
     setSize("scale(" + (Math.random() + 0.7) + ")");
     setPlusMinus(Math.random() > 0.4 ? 1 : -1); // on cherche a avoir un chiffre neg ou un chiffre positf aleatoiremnt
-  }, []);
+  }, [props.idProject]);
+ 
   //motion parameters
   const variants = {
     initial: {
@@ -49,8 +53,11 @@ const Projects = (props) => {
       y: 0,
     },
   };
-
+  if (!currentProject) {
+    return <div>Loading...</div>; // Add loading state, if needed
+  }
   return (
+   
     <motion.div
       className="project-main"
       initial="initial"
