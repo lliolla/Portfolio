@@ -1,0 +1,95 @@
+.about {
+position: absolute;
+width: 100vw;
+height: 100vh;
+
+  &:after {
+    content: "";
+    height: 700px;
+    width: 700px;
+    background: $color-3;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    right: -460px;
+    z-index: -10;
+    animation: contactAnim 25s alternate infinite;
+
+    @media screen and (max-width: 840px) {
+      height: 400px;
+      width: 400px;
+      top: 520px;
+      right: -140px;
+    }
+    @media screen and (max-width: 430px) {
+      display: none;
+    }
+
+    @keyframes contactAnim {
+      50% {
+        transform: scale(1.4);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+  .container {
+    margin: 7% 0 0 24%;
+    max-width: 50%;
+    position: relative;
+    max-width: 300px;
+
+    .about-container h2 {
+        margin-bottom: 50px; 
+        &:after {
+            content: "";
+            height: 70px;
+            width: 70px;
+            border: 1px $color-2 solid;
+            border-radius: 50%;
+            position: absolute;
+            top: -22px;
+            left:70px;
+            z-index: -1;
+          }
+    }
+    .about-container p {
+        margin-bottom: 50px; 
+    }
+    .stack-container {
+      h2 {
+        margin-bottom: 50px;    
+        &:after {
+            content: "";
+            height: 70px;
+            width: 70px;
+            border: 1px $color-2 solid;
+            border-radius: 50%;
+            position: absolute;
+            top: 178px;
+            left: 70px;
+            z-index: -1;
+          }
+      }
+      .stack-icons {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin: 10px;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+.logo {
+  top: 8px;
+  right: 1rem;
+}
+ul {
+  li img {
+    width: 50px;
+  }
+}
