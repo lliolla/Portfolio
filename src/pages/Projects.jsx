@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "../components/Logo";
 import Mouse from "../components/Mouse";
 import Nav from "../components/Nav";
-import Slide from "../components/Slide"
+import Slide from "../components/Slide";
 import { projectsData } from "../data/projectsData";
 
 ///on creer les chevrons
@@ -14,36 +14,31 @@ const Projects = () => {
 
   const nextSlide = () => {
     setcurrentIndex(currentIndex === projectLenght - 1 ? 0 : currentIndex + 1);
-    console.log("setcurrentIndex",currentIndex);
+    console.log("setcurrentIndex", currentIndex);
   };
   const prevSlide = () => {
     setcurrentIndex(currentIndex === 0 ? projectLenght - 1 : currentIndex - 1);
-    console.log("setcurrentIndex",currentIndex);
+    console.log("setcurrentIndex", currentIndex);
   };
- 
- return (
-    <main >
-       
+
+  return (
+    <main>
       <Mouse />
       <div className="project">
         <Nav />
         <Logo />
-        <h2 >Portfolio</h2>
-        {projectsData.map((slides,index) => ( 
-            <div key={slides.id}>
-            {
-               index=== currentIndex &&(<Slide idProject={slides.id} />)
- 
-            }
-            
-            </div>
-          ))}
+      
+        {projectsData.map((slides, index) => (
+          <div key={slides.id}>
+            {index === currentIndex && <Slide idProject={slides.id} />}
+          </div>
+        ))}
         <div className="arrow">
           <div onClick={prevSlide} className="left hover">
             <span> &#10092;</span>
           </div>
-          
-              <div onClick={nextSlide} className="right hover">
+
+          <div onClick={nextSlide} className="right hover">
             <span> &#10093;</span>
           </div>
         </div>
