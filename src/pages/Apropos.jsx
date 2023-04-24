@@ -36,8 +36,8 @@ const Apropos = () => {
           <div className="circle"></div>
           <p>
             Développeuse web passionnée par le monde digital, je suis à la
-            recherche d'un nouveau projet passionnant a partager avec vos
-            équipes
+            recherche d'un nouveau projet passionnant à partager avec vos
+            équipes.
           </p>
         </div>
         <div className="stack-container">

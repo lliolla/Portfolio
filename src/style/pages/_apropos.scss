@@ -73,6 +73,25 @@ height: 100vh;
             top: 178px;
             left: 70px;
             z-index: -1;
+        }
+     &:before{
+            width:30px;
+            height:30px;
+            background:cyan;
+            border-radius:50%;
+          }
+          @keyframes circle{
+            0%{
+              transform:rotate(0deg)
+                        translate(-165px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(360deg)
+                        translate(-165px)
+                        rotate(-360deg);
+            }
           }
       }
       .stack-icons {
