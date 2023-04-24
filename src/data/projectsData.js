@@ -47,7 +47,7 @@ export const projectsData = [
       link: "https://github.com/lliolla/lliolla-P6-soPekocko",
     },
     {
-      id: 5,
+      id: 6,
       title: "So Pekocko",
       languages: ["GIT","NODEJS","MONGODB"],
       infos:
@@ -57,7 +57,7 @@ export const projectsData = [
       link: "https://github.com/lliolla/lliolla-P6-soPekocko",
     },
     {
-      id: 6,
+      id: 7,
       title: "Groupomania",
       languages: ["VUEJS","GIT","NODEJS","MYSQL","SEQULIZE"],
       infos:
@@ -66,7 +66,7 @@ export const projectsData = [
       link: "https://github.com/lliolla/P7-DW-groupomania.google.com",
     },
     {
-        id: 7,
+        id: 8,
         title: "TEAM NARVAL",
         languages: ["WORDPRESS","ELEMENTOR"],
         infos:

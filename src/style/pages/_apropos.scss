@@ -42,6 +42,7 @@ height: 100vh;
 
     .about-container h2 {
         margin-bottom: 50px; 
+        
         &:after {
             content: "";
             height: 70px;
@@ -52,7 +53,9 @@ height: 100vh;
             top: -22px;
             left:70px;
             z-index: -1;
+            
           }
+        
     }
     .about-container p {
         margin-bottom: 50px; 
