@@ -3,8 +3,7 @@
   height: 100vh;
   width: 100vw;
 
-  &:after {
-    content: "";
+  .circle4 {
     height: 340px;
     width: 340px;
     border: 1px solid $color-2;
@@ -13,6 +12,33 @@
     bottom: -200px;
     left: -80px;
     z-index: -1;
+    &:after{
+        content:"";
+        width:20px;
+        height:20px;
+        background:cyan;
+        border-radius:50%;
+            position:absolute;
+     top: 155px;left: 155px;
+            overflow:hidden;
+            margin:auto;
+             animation: bigCircle 6s linear infinite;
+          }
+    
+          @keyframes bigCircle{
+            0%{
+              transform:rotate(0deg)
+                        translate(-165px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(360deg)
+                        translate(-165px)
+                        rotate(-360deg);
+            }
+          }
+           
 
     @media screen and (max-width: 810px){
       height: 200px;
@@ -285,3 +311,8 @@
   }
 }
 
+.projectInfos li{
+ul{
+  list-style-type: circle;
+}
+}

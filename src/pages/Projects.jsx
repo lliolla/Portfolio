@@ -27,7 +27,7 @@ const Projects = () => {
       <div className="project">
         <Nav />
         <Logo />
-      
+      <div className="circle4"></div>
         {projectsData.map((slides, index) => (
           <div key={slides.id}>
             {index === currentIndex && <Slide idProject={slides.id} />}

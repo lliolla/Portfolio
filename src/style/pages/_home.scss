@@ -34,13 +34,24 @@
     }
   }
   .home-main {
-    display: grid;
+    display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     height: 95%;
 
     .main-content {
       user-select: none;
+      width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 650px){
+          font-size: 2rem;
+              width: 90%;
+        }
+        @media screen and (min-width: 1200px){
+          font-size: 5rem;
+              width: 80%;
+        }
 
       h1 {
         font-size: 3.7rem;
@@ -49,9 +60,11 @@
 
         @media screen and (max-width: 650px){
           font-size: 2rem;
+              width: 80%;
         }
         @media screen and (min-width: 1200px){
           font-size: 5rem;
+              width: 100%;
         }
 
         &:before {
@@ -87,6 +100,7 @@
 
         @media screen and (max-width: 650px){
           font-size: 2rem;
+          
         }
         @media screen and (min-width: 1200px){
           font-size: 5rem;

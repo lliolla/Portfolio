@@ -46,18 +46,9 @@ export const projectsData = [
       img: "./assets/img/soekocko.jpg",
       link: "https://github.com/lliolla/lliolla-P6-soPekocko",
     },
+   
     {
       id: 6,
-      title: "So Pekocko",
-      languages: ["GIT","NODEJS","MONGODB"],
-      infos:
-         [ "Implémenter un modèle logique de données conformément à la réglementation",
-         "Mettre en œuvre des opérations CRUD de manière sécurisée","Stocker des données de manière sécurisée"],
-      img: "./assets/img/soekocko.jpg",
-      link: "https://github.com/lliolla/lliolla-P6-soPekocko",
-    },
-    {
-      id: 7,
       title: "Groupomania",
       languages: ["VUEJS","GIT","NODEJS","MYSQL","SEQULIZE"],
       infos:
@@ -71,7 +62,7 @@ export const projectsData = [
         languages: ["WORDPRESS","ELEMENTOR"],
         infos:
            [ "Créer un site web selon une commande client","Rédaction du cahier des charges","Réalisation de la charte graphique","Développement et déploiement du site"],
-        img: "./assets/img/groupomania.jpg ",
+        img: "./assets/img/teamNarval.jpg ",
         link: "http://www.teamnarval.ovh/",
       },
   ];

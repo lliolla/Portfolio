@@ -32,8 +32,8 @@ const Apropos = () => {
         <Logo />
         <div className="container">
         <div className="about-container">
-          <h2>A propos</h2>
-          <div className="circle"></div>
+          <h2 >A propos</h2>
+          <div className="circle1"></div>
           <p>
             Développeuse web passionnée par le monde digital, je suis à la
             recherche d'un nouveau projet passionnant à partager avec vos
@@ -41,7 +41,8 @@ const Apropos = () => {
           </p>
         </div>
         <div className="stack-container">
-          <h2>Ma stack</h2>
+          <h2 >Ma stack</h2>
+          <div className="circle2"></div>
           <div className="stack-icons">
             <div>
     

@@ -35,6 +35,7 @@ const ContactForm = () => {
   return (
     <div className='form-container' >
         <h2>Contactez moi</h2>
+        <div className="circle3"></div>
     <form ref={form} onSubmit={sendEmail} className="form-content" >
       <label>Nom</label>
       <input type="text" name="name" required autoComplete='off'id="name" />

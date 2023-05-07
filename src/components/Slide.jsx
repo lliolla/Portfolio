@@ -87,7 +87,11 @@ const Projects = (props) => {
         <div className="img-container hover">
           <span>
             <h3> {currentProject.title} </h3>
-            <p> {currentProject.infos} </p>
+            <div className="projectInfos">
+                 {currentProject.infos.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}   
+            </div>
           </span>
           <img
             src={currentProject.img}
