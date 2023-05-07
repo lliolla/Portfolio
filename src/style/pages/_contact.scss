@@ -49,7 +49,7 @@ main{
     right: 1rem;
   }
   .main_container{
-    margin:25% 14%;
+    margin: 15% 0 0 20%;
 
     .form-container {
         max-width: 50%;
@@ -165,13 +165,13 @@ main{
             font-size: 1.5rem;
             }
         }
-        .email,
-        .phone {
-            @media screen and (max-height: 640px) {
-            display: none;
+        // .email,
+        // .phone {
+        //     @media screen and (max-height: 640px) {
+        //     display: none;
          
-            }
-        }
+        //     }
+        // }
         .email .content p,
         .phone .content p {
             transition: 0.25s;
