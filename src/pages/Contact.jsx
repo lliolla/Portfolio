@@ -43,8 +43,8 @@ const Contact = () => {
             <div className="address">
               <div className="content">
                 <h4>Adresse</h4>
-                <p>90 route du grand Pré</p>
-                <p>38580 le haut Bréda</p>
+                <p>Allevard,  </p>
+                <p>Auvergne-Rhône-Alpes</p>
               </div>
             </div>
             <div className="phone">
@@ -79,10 +79,9 @@ const Contact = () => {
             <Social />
             <div className="credits">
               <p>
-                Made with{" "}
+                Made with
                 <span>
-                  {" "}
-                  <BsFillBalloonHeartFill />{" "}
+                  <BsFillBalloonHeartFill />
                 </span>
                 by Fanny Jobert - 2023
               </p>

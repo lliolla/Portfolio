@@ -152,7 +152,7 @@ main{
     
         h4 {
             color: $color-4;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-weight: 200;
             margin-bottom: 10px;
     
@@ -244,10 +244,9 @@ main{
             }
         }
         .credits {
-            text-align: center;
-    
+
+            
             @media screen and (max-width: 740px) {
-                transform: translateY(20px);
                 font-size: 0.7rem;
                 margin-top: 3rem;
                 transform: translateY(20px);
@@ -255,9 +254,12 @@ main{
             
                 grid-area: d   ;
             }
-            p {
-            font-size: 0.9rem;
-            }
+            p  span{
+                    font-size: 0.9rem;
+                    margin: 0 7px;
+                    }
+            
+            
         }
         }
 }

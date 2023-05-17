@@ -18,22 +18,22 @@ const Social = () => {
   return (
     <div className="social-network">
       <ul className="content">
-        <a href="" target="_blank" rel="noopener noreferer" className="hover"
+        <a href="https://github.com/lliolla" target="_blank" rel="noopener noreferer" className="hover"
         onMouseOver={anim} >
           <li>
-            <i className="fab fa-twitter"></i>
+            <i className="fa-brands fa-github"></i>
           </li>
         </a>
-        <a href="" target="_blank" rel="noopener noreferer" className="hover" onMouseOver={anim}>
+        <a href="https://fr.linkedin.com/in/fanny-jobert-074871151" target="_blank" rel="noopener noreferer" className="hover" onMouseOver={anim}>
           <li>
-            <i className="fab fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
           </li>
         </a>{" "}
-        <a href="" target="_blank" rel="noopener noreferer" className="hover" onMouseOver={anim}>
+        {/* <a href="" target="_blank" rel="noopener noreferer" className="hover" onMouseOver={anim}>
           <li>
             <i className="fab fa-facebook"></i>
           </li>
-        </a>
+        </a> */}
       </ul>
     </div>
   );
