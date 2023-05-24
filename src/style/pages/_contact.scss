@@ -1,7 +1,6 @@
-main{
-    position: static;
+main {
+  position: static;
 }
-
 
 .contact {
   position: absolute;
@@ -41,252 +40,252 @@ main{
   }
   .navigation {
     @media screen and (max-width: 440px) {
-   
     }
   }
   .logo {
     top: 8px;
     right: 1rem;
   }
-  .main_container{
-    margin: 15% 0 0 20%;
-
-    .form-container {
-        max-width: 50%;
-        position: relative;
+  .main_container {
+    margin: 15% 0 0 24%;  
+    max-width: 50%;
+    @media screen and (max-width: 440px) {
+      margin: 45% 14%;
+    }
+    @media screen and (max-width: 740px) {
+        margin: 15% 24%;
         max-width: 300px;
-    
-        @media screen and (max-width: 740px) {
-          margin: 2rem 0 0 30%;
-        }
-        @media screen and (max-width: 440px) {
-          margin-left: 2rem;
-        }
-        h2 {
-          margin-bottom: 50px;
-        }
-    
-        .form-content {
-          display: grid;
-    
-          input,
-          textarea {
-            background: none;
-            font-family: $font-1;
-            font-size: 1.2rem;
-            border-bottom: 1px solid $color-2;
-            border-radius: 2px;
-    
-            @media screen and (min-width: 1200px) {
-              font-size: 1.5rem;
-            }
-          }
-          input {
-            padding: 10px 6px;
-            margin-bottom: 30px;
-          }
-        }
-        textarea {
-          resize: none;
-          padding: 6px 0;
-          height: 70px;
-    
-          @media screen and (max-width: 540px) {
-            width: 75%;
-            padding: 12px 0;
-          }
-        }
-        input.button {
-          background: $color-3;
-          height: 55px;
-          width: 126px;
-          border-radius: 50px;
-          margin-top: 20px;
-          font-size: 1.2rem;
-          cursor: pointer;
-          transition: 0.2s;
-          border: none;
-        }
-        .formMessage {
-            p {
-              border-radius: 20px;
-              text-align: center;
-              padding: 5px 0;
-            }
-            .success {
-              background: rgb(139, 248, 139);
-            }
-            .error {
-              background: rgb(246, 147, 147);
-            }
-          }
+       
+       
       }
-    .contact-infos {
-        position: absolute;
-        bottom: 0;
-        right: 0;
+    .form-container {
+
+        max-width: 50%;
+      position: relative;
+      
+      
+      @media screen and (max-width: 440px) {
+        margin-left: 1rem;
+      }
+      h2 {
+        margin-bottom: 50px;
+      }
+
+      .form-content {
         display: grid;
-        grid-template-rows: repeat(4, 23%) 12%;
-        height: 70%;
-        width: 30%;
-        max-width: 500px;
-    
-        @media screen and (max-width: 740px) {
-            position: static;
-            height: 200px;
-            width: 100%;
-            max-width: 100%;
-        
+
+        input,
+        textarea {
+          background: none;
+          font-family: $font-1;
+          font-size: 1.2rem;
+          border-bottom: 1px solid $color-2;
+          border-radius: 2px;
+
+          @media screen and (min-width: 1200px) {
+            font-size: 1.5rem;
+          }
         }
+        input {
+          padding: 10px 6px;
+          margin-bottom: 30px;
+        }
+      }
+      textarea {
+        resize: none;
+        padding: 6px 0;
+        height: 70px;
+
         @media screen and (max-width: 540px) {
-            
-            display: block;
+          width: 75%;
+          padding: 12px 0;
         }
-        @media screen and (max-height: 500px) {
-            display: none;
+      }
+      input.button {
+        background: $color-3;
+        height: 55px;
+        width: 126px;
+        border-radius: 50px;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.2s;
+        border: none;
+      }
+      .formMessage {
+        p {
+          border-radius: 20px;
+          text-align: center;
+          padding: 5px 0;
+        }
+        .success {
+          background: rgb(139, 248, 139);
+        }
+        .error {
+          background: rgb(246, 147, 147);
+        }
+      }
+    }
+    .contact-infos {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: grid;
+      grid-template-rows: repeat(4, 23%) 12%;
+      height: 70%;
+      width: 30%;
+      max-width: 500px;
+
+      @media screen and (max-width: 740px) {
+  
+        height: 200px;
+        width: 100%;
+        max-width: 100%;
+      }
+      @media screen and (max-width: 540px) {
+        display: block;
+      }
+      @media screen and (max-height: 500px) {
+        display: none;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 35%;
+        height: 83%;
+      }
+
+      h4 {
+        color: $color-4;
+        font-size: 1.1rem;
+        font-weight: 200;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: 1200px) {
+          font-size: 1.8rem;
+        }
+      }
+      p {
+        @media screen and (min-width: 1200px) {
+          font-size: 1.5rem;
+        }
+      }
+      // .email,
+      // .phone {
+      //     @media screen and (max-height: 640px) {
+      //     display: none;
+
+      //     }
+      // }
+      .email .content p,
+      .phone .content p {
+        transition: 0.25s;
+
+        &:hover {
+          transform: translateX(5px);
+        }
+      }
+
+      .address {
+        position: relative;
+
+        @media screen and (max-width: 540px) {
+          display: none;
+        }
+        .content {
+          position: absolute;
+          right: 10px;
+        }
+      }
+      .phone {
+        position: relative;
+
+        @media screen and (max-width: 540px) {
+          text-align: center;
+          font-size: 0.8rem;
+          padding: 15px;
+          grid-area: b;
+        }
+
+        .content {
+          position: absolute;
+          left: 40%;
+          transform: translateX(-50%);
+
+          @media screen and (max-width: 540px) {
+            position: relative;
+            margin: 0 auto;
+            left: 0;
+            transform: translateX(0);
+          }
+        }
+      }
+      .email {
+        @media screen and (max-width: 540px) {
+          grid-area: c;
+          font-size: 0.8rem;
+          text-align: center;
+          padding: 15px;
+        }
+      }
+      .social-network {
+        position: relative;
+        width: 80%;
+
+        @media screen and (max-width: 740px) {
+          padding: 15px;
+          grid-area: d;
+          transform: translateX(35%);
         }
         @media screen and (min-width: 1200px) {
-            width: 35%;
-            height: 83%;
+          font-size: 2rem;
         }
-    
-        h4 {
-            color: $color-4;
-            font-size: 1.1rem;
-            font-weight: 200;
-            margin-bottom: 10px;
-    
-            @media screen and (min-width: 1200px) {
-            font-size: 1.8rem;
-            }
-        }
-        p {
-            @media screen and (min-width: 1200px) {
-            font-size: 1.5rem;
-            }
-        }
-        // .email,
-        // .phone {
-        //     @media screen and (max-height: 640px) {
-        //     display: none;
-         
-        //     }
-        // }
-        .email .content p,
-        .phone .content p {
-            transition: 0.25s;
-    
-            &:hover {
-            transform: translateX(5px);
-            }
-        }
-    
-        .address {
-            position: relative;
-    
-            @media screen and (max-width: 540px) {
-            display: none;
-            }
-            .content {
-            position: absolute;
-            right: 10px;
-            }
-        }
-        .phone {
-            position: relative;
-    
-            @media screen and (max-width: 540px) {
-            text-align: center;
-            font-size: 0.8rem;
-            padding: 15px;
-            grid-area: b;
-            }
-    
-            .content {
-            position: absolute;
-            left: 40%;
-            transform: translateX(-50%);
-    
-            @media screen and (max-width: 540px) {
-                position: relative;
-                margin: 0 auto;
-                left: 0;
-                transform: translateX(0);
-            }
-            }
-        }
-        .email {
-            @media screen and (max-width: 540px) {
-            grid-area: c;
-            font-size: 0.8rem;
-            text-align: center;
-            padding: 15px;
-            }
-        }
-        .social-network {
-            position: relative;
-            width: 80%;
-          
-    
-            @media screen and (max-width: 740px) {
-            width: 50%;
-            padding: 15px;
-            grid-area: d;
-            }
-            @media screen and (min-width: 1200px) {
-            font-size: 2rem;
-            }
-    
-            .content {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            }
-        }
-        .credits {
 
-            
-            @media screen and (max-width: 740px) {
-                font-size: 0.7rem;
-                margin-top: 3rem;
-                transform: translateY(20px);
-                font-size: 0.7rem;
-            
-                grid-area: d   ;
-            }
-            p  span{
-                    font-size: 0.9rem;
-                    margin: 0 7px;
-                    }
-            
-            
+        .content {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
         }
+      }
+      .credits {
+        @media screen and (max-width: 740px) {
+          font-size: 0.7rem;
+          margin-top: 3rem;
+          transform: translateY(20px);
+          font-size: 0.7rem;
+          text-align: center;
+
+          grid-area: d;
         }
+        p span {
+          font-size: 0.9rem;
+          margin: 0 7px;
+        }
+      }
+    }
+  }
 }
 
- 
-
-}
-
-.circle3{
-    height: 70px;
-    width: 70px;
-    border: 1px $color-2 solid;
+.circle3 {
+  height: 70px;
+  width: 70px;
+  border: 1px $color-2 solid;
+  border-radius: 50%;
+  position: absolute;
+  top: -22px;
+  left: 133px;
+  z-index: -1;
+  &:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: cyan;
     border-radius: 50%;
     position: absolute;
-    top: -22px;
-    left:133px;
-    z-index: -1;
-    &:after{
-        content:"";
-        width:10px;
-        height:10px;
-        background:cyan;
-        border-radius:50%;
-        position:absolute;
-        top:0; bottom:0; left:0;right:0;
-        overflow:hidden;
-        margin:auto;
-        animation: circle 6s linear infinite;
-      }
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+    animation: circle 6s linear infinite;
   }
+}
